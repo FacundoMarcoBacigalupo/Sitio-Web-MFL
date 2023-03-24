@@ -605,16 +605,18 @@
         text-align: center;
     }
 
+
+
     /* Servicio JÚPITER */
     .forma {
         margin: auto;
-        margin-top: 10px;
+        margin-top: 35px;
         margin-bottom: 50px;
         width: 400px;
         height: 500px;
         background: #e7e2e2;
         color: #592512;
-        border-style: solid;
+        border: 10px solid;
         text-align: center;
     }
     .forma p{
@@ -651,15 +653,18 @@
     /* Fin servicio JÚPITER */
 
     /* Servicio SATURNO */
+    .move{
+        margin: auto;
+    }
     .vendido{
-        margin: 0 auto;
+        margin: auto;
         margin-bottom: -15px;
         padding: 5px;
         background: #1a1a1a;
-        width: 600px;
-        height: 35px;
+        width: 80%;
+        height: 40px;
         color: #e7e2e2;
-        letter-spacing: 4px;
+        letter-spacing: 8px;
         font-size: 20px;
         text-align: center;
         border-bottom-left-radius: 25px;
@@ -670,14 +675,13 @@
 
 
     .forma2 {
-        margin: auto;
         margin-top: 10px;
         margin-bottom: 100px;
         width: 400px;
         height: 500px;
         background: #e7e2e2;
         color: #d9bf8f;
-        border-style: solid;
+        border: 10px solid;
         text-align: center;
     }
     .forma2 p{
@@ -716,13 +720,13 @@
     /* Servicio URANO */
     .forma3 {
         margin: auto;
-        margin-top: 10px;
+        margin-top: 35px;
         margin-bottom: 50px;
         width: 400px;
         height: 500px;
         background: #e7e2e2;
         color: #5ebaf2;
-        border-style: solid;
+        border: 10px solid;
         text-align: center;
     }
     .forma3 p{
