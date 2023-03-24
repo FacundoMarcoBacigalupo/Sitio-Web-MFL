@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+    * {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    } 
+    html {
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    body {
+        background-color: #e9e5e5;
+        color: #444444;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+
+
+ /*** Fin pagina home***/
+    #home{
+        border-bottom: solid #e9e5e5;
+    }
+  /* Barra de navegacion*/
+    .logo{
+        object-fit: cover;
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+        width: 100px;
+        border-radius: 10px;
+    }
+    .logo:hover{
+        cursor: pointer;
+        width: 105px;
+        height: 51px;
+        transition: 1.1s;
+    }
+
+
+    .barraNav{
+        justify-content: end;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav{
+        background-color: #1a1a1a;
+    }
+ /* Fin barra de navegacion*/
+
+
+
+    /* seccion estas */
+    /* Boton si-no */
+    .si-no{
+        width: 35%;
+        background: #e9e5e5;
+        color: #1a1a1a;
+        border-style: solid;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: bold;
+    }
+    #estas {
+        text-align: center;
+    }
+    /* Fin boton si-no */
+
+    h1 {
+        margin: 10px 6px;
+        font-size: 50px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-style: italic;
+    }
+    /* Fin seccion estas */
+
+
+    h2 {
+        font-size: 30px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-style: italic;
+    }
+    p {
+        font-size: 15px;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+
+
+    /* Estas listo */
+   #estas{
+    background-image: url(Imagenes/cohete\ 2.jpg);
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 0;
+    border-radius: 0;
+    text-shadow: 0 0 10px #1a1a1a;
+    color:#e9e5e5;
+   }
+    /* Fin estas listo */
+
+
+
+    /* Foto quienes somos*/
+    #team {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #team:hover {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        transition: 1.1s;
+    }
+
+    /* Fin foto quienes somos*/
+
+
+
+
+
+    /* Pie de pagina */
+    footer {
+        background-color: #1a1a1a;
+        color: #e9e5e5;
+        padding: 10px;
+    }
+    /* Fotos redes sociales */
+    #redes {
+        display: flex;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    #tiktok img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    #tiktok :hover {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        filter: grayscale(100%);
+        transition: 1.1s;
+    }
+   
+
+    #ig img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    #ig :hover {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        filter: grayscale(100%);
+        transition: 1.1s;
+    }
+
+
+    #fb img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    #fb :hover {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        filter: grayscale(100%);
+        transition: 1.1s;
+    }
+    /* Fin fotos redes sociales */
+    #copyright{
+        padding: 5px 5px;
+        font-size: 12px;
+        text-align: center;
+        display: block;
+    }
+
+    .up img{
+        height: 42px;
+        width: 30px;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+    }
+    .up img:hover{
+        filter:invert(100%);
+        transition: 0.9s;
+    }
+    /* Fin pie de pagina */
+ /*** Fin pagina home***/
+
+
+ 
+
+
+    /*** Pagina Contactanos ***/
+    #contact{
+        border-bottom: solid #e9e5e5;
+    }
+
+    strong{
+    font-size: 20px;
+   }
+
+
+    
+    #grillacontac{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+    
+        grid-template-areas:
+        "containercontac containercontac"
+        "cohetecontac   cohetecontac";
+    
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+       
+
+    /* Cuestionario */
+    .containercontac{
+        grid-area: containercontac;
+        grid-column: 1/4;
+    }
+    .singup {
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: block;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 0.5em;
+      }
+      
+      .card{
+        margin: 0 auto;
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        background: #e3e3e3;
+        box-shadow: 16px 16px 32px #c8c8c8;
+        border-radius: 10px;
+      }
+      
+      .inputBox{
+        width: 90%;
+        margin-bottom: 50px;
+      }
+      
+      .inputBox input{
+        width: 100%;
+        padding: 10px;
+        color: #000;
+        font-size: 1em;
+        border-left: 2px solid #000;
+        border-bottom: 2px solid #000;
+      }
+      
+      .inputBox span{
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 15px;
+        color: #000;
+        letter-spacing: 3px;
+        border-radius: 10px;
+      }
+    
+      
+    
+      .enter{
+        height: 50px;
+        width: 50%;
+        border-radius: 10px;
+        border: 2px solid #000;
+        font-size: 15px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+      }
+      .enter:hover{
+        background-color: rgb(0, 0, 0);
+        color: white;
+      }
+    /* Fin cuestionario */
+
+
+    .cohetecontac{
+        display: flex;
+        grid-area: cohetecontac;
+        grid-column: 1/4;
+    }
+    .coe1 {
+        padding: 5px 5px;
+        grid-area: coe1;
+        grid-column: 1/2;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .coe2 {
+        padding: 5px 5px;
+        grid-area: coe2;
+        grid-column: 2/3;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .coe3 {
+        padding: 5px 5px;
+        grid-area: coe3;
+        grid-column: 3/4;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    /*** Fin pagina Contactanos ***/
+
+
+
+
+
+
+    /*** Pagina Información ***/
+    #info{
+        border-bottom: solid #e9e5e5;
+    }
+
+
+    h1{
+        font-size: 20px;
+    }
+
+
+
+
+    #grillainfo{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+    
+        grid-template-areas:
+        "imagenesinfo imagenesinfo"
+        "skills   skills";
+    
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    
+
+    .imagenesinfo{
+        grid-area: imagenesinfo;
+        grid-column: 1/3;
+        object-fit: cover;
+    }
+
+    .equipo, .galaxia, .equipo2{
+        width: 100%;
+        height: 500px;
+    }
+
+
+
+
+
+    .skills{
+        grid-area: skills;
+        margin-bottom: 20px;
+        text-align: left;
+        grid-column: 1/3;
+    }
+
+    
+    .skill1{
+        padding: 20px;
+    }
+    .skill1 img{
+        margin-top: 5px;
+        width: 80px;
+        height: 50px;
+    }
+
+
+
+    .skill2{
+        padding: 20px;
+    }
+    .skill2 img{
+        margin-top: 5px;
+        width: 80px;
+        height: 50px;
+    }
+
+
+
+    .skill3{
+        padding: 20px;
+    }
+    .skill3 img{
+        margin-top: 5px;
+        width: 80px;
+        height: 50px;
+    }
+    
+
+
+    .skill4{
+        padding: 20px;
+    
+    }
+    .skill4 img{
+        margin-top: 5px;
+        width: 80px;
+        height: 50px;
+    }
+
+
+
+    .skill5{
+        padding: 20px;
+    }
+    .skill5 img{
+        margin-top: 5px;
+        width: 80px;
+        height: 50px;
+    }
+
+
+
+   
+    div.RedesSociales{
+        text-align: center;
+    }
+    .RedesSociales h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .RedesSociales img{
+        margin: 20px;
+        height: 300px;
+        width: 400px;
+    }
+    /*** Fin pagina Información ***/
+
+
+
+
+
+
+    /*** Pagina equipo ***/
+    #equipo{
+        border-bottom: solid #e9e5e5;
+    }
+
+    #facu img{
+       width: 90%;
+       height: 500px;
+       object-fit: cover;
+       padding-top: 20px;
+    }
+    .nright h2{
+        text-align: center;
+    }
+    .nright p{
+        text-align: left;
+    }
+    .nright p::first-letter{
+        font-size: 30px;
+    }
+    .team1{
+        border: 2px solid #000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    
+
+   .linkedin img{
+        margin: 10px;
+        width: 70px;
+        height: 70px;
+    } 
+
+
+
+    #mica img{
+       width: 90%;
+       height: 500px;
+       object-fit: cover;
+       padding-top: 20px;
+    }
+    .team2{
+       border: 2px solid #000;
+       margin-top: 10px;
+       margin-bottom: 10px;
+    }
+    /*** Fin pagina equipo ***/
+
+
+
+
+
+
+
+
+    /*** Pagina historia ***/
+    .historia h1 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 50px;
+        text-align: center;
+    }
+    .historia p {
+        font-family: 'Space Grotesk', sans-serif;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .historia p::first-letter {
+        font-size: 20px;
+    }
+
+
+    
+    /* Fotos */
+    #logostipos{
+        display: flex;
+        margin: 50px;
+    }
+    .logos {
+        padding: 0px 0px 0px 25px;
+        width: 280px;
+        height: 140px;
+    }
+    .rectangulo {
+        margin: auto;
+        margin-bottom: 10px;
+        width: 300px;
+        height: 230px;
+        border-color: #1a1a1a;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 12px 12px 12px 12px;
+        text-align: left;
+    }
+    .texto1 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+    .texto2 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: bold;
+        padding-top: 10px;
+        font-size: 15px;
+        text-align: left;
+    }
+    /* Fin fotos */
+    /*** Fin pagina historia ***/
+
+
+
+
+
+
+
+    /*** Pagina servicios ***/
+    #servi{
+        border-bottom: solid #e9e5e5;
+    }
+
+    .a_que_planeta h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .a_que_planeta p {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .descuento {
+        height: 40px;
+        padding-top: 7px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        background: #444444;
+        color: #e9e5e5;
+        border-color: #000000;
+        border-width: 2px;
+        border-style: solid;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Servicio JÚPITER */
+    .forma {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        width: 400px;
+        height: 500px;
+        background: #e7e2e2;
+        color: #592512;
+        border-style: solid;
+        text-align: center;
+    }
+    .forma p{
+        margin-bottom: 20px;
+    }
+
+    .nombre {
+        margin: auto;
+        font-weight: bold;
+        color: #a64724;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    .precio {
+        margin: auto;
+        font-weight: bold;
+        color: #592512;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    .texto {
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #444444;
+        font-size: 15px;
+    }
+
+    #botonm{
+        margin: auto;
+    }
+    /* Fin servicio JÚPITER */
+
+    /* Servicio SATURNO */
+    .vendido{
+        margin: 0 auto;
+        margin-bottom: -15px;
+        padding: 5px;
+        background: #1a1a1a;
+        width: 600px;
+        height: 35px;
+        color: #e7e2e2;
+        letter-spacing: 4px;
+        font-size: 20px;
+        text-align: center;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+  
+
+
+    .forma2 {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        width: 400px;
+        height: 500px;
+        background: #e7e2e2;
+        color: #d9bf8f;
+        border-style: solid;
+        text-align: center;
+    }
+    .forma2 p{
+        margin-bottom: 20px;
+    }
+
+    .nombre2 {
+        margin: auto;
+        font-weight: bold;
+        color: #bfab9f;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    .precio2 {
+        margin: auto;
+        font-weight: bold;
+        color: #d9bf8f;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    .texto2 {
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #444444;
+        font-size: 15px;
+    }
+
+    #botonm2{
+        margin: auto;
+    }
+    /* Fin servicio SATURNO */
+
+    /* Servicio URANO */
+    .forma3 {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        width: 400px;
+        height: 500px;
+        background: #e7e2e2;
+        color: #5ebaf2;
+        border-style: solid;
+        text-align: center;
+    }
+    .forma3 p{
+        margin-bottom: 20px;
+    }
+
+    .nombre3 {
+        margin: auto;
+        font-weight: bold;
+        color: #2c5f73;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    .precio3 {
+        margin: auto;
+        font-weight: bold;
+        color: #5ebaf2;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    .texto3 {
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #444444;
+        font-size: 15px;
+    }
+
+    #botonm3{
+        margin: auto;
+    }
+    /* Fin servicio URANO */
+    /*** Fin pagina servicios ***/
+ 
+
+
+
+
+
+
+
+    /*** Pagina NO ***/
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+
+    textarea{
+        width: 100%;
+        height: 200px;
+        border: 1px solid #1a1a1a;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+        font-size: 15px;
+    }
+
+
+
+    .botonNO .no{
+        grid-column: 1/4;
+        width: 100px;
+        height: 50px;
+        margin-top: 0;
+        margin-left: 20px;
+        background-color: #1a1a1a;
+        color: #e9e5e5;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .botonNO .no:hover{
+        background-color: #444444;
+    }
+
+
+
+    
+    .grangalaxia img{
+        grid-column: 1/4;
+        grid-row: 1/4;
+        height: 300px;
+        width: 100%;
+        padding: 5px;
+    }
+    .grangalaxia img:hover{
+        filter: grayscale(100%);
+        cursor: cell;
+        transform: scale(0.9);
+        transition: 1.1s;
+    } 
+    /*** Fin pagina NO ***/
+
+
+
+
+
+
+
+    /*** !Voy a este planeta¡ ***/
+    h2 {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+
+    .whatsapp {
+        width: 90%;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .whatsapp:hover{
+       height: 410px;
+       padding: 20px;
+       opacity: 1;
+       filter: contrast(120%);
+       transition: all .7s;
+    }
+
+
+
+    .imagenes{
+        display: flex;
+        width: 100%;
+        height: 500px;
+    }
+    .imagenes img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+    }
+    .imagenes img:hover{
+       cursor: crosshair;
+       width: 300px;
+       opacity: 1;
+       filter: contrast(120%);
+    }
+  /*** Fin !Voy a este planeta¡ ***/
+
+
+
+
+
+  /*** Blog***/
+    #blog{
+        border-bottom: solid #e9e5e5;
+    }
+
+
+    .title h1{
+        text-align: center;
+        font-size: 24px;
+    }
+    .title h2{
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    #grilla{
+    display: grid;
+    grid-template-rows: 1fr 1px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+    "subidas podcast"
+    "subidas podcast"
+    "articulo1  articulo1"
+    "articulo2  articulo2"
+    "articulo3  articulo3";
+
+    grid-gap: 20px;
+    padding: 20px;
+    text-align: center;
+    }
+
+    .borderblog{
+        border: 3px solid black;
+    }
+
+
+
+    section#subidas{
+        grid-area: subidas;
+        padding: 5px;
+        color: #e9e5e5;
+        background-color:#1a1a1a;
+    }
+    .espacios{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+
+
+
+    section#podcast{
+        grid-area: podcast;
+        background-color: #412326;
+    }
+    .spot{
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .spot:hover {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        filter: grayscale(100%);
+        transition: 1.1s;
+    }
+
+
+
+
+    section.articulo1{
+        grid-area: articulo1;
+        background-color: #e9e5e5;
+    }
+
+
+
+    section.articulo2{
+        grid-area: articulo2;
+        background-color: #1a1a1a;
+        color: #e9e5e5;
+    }
+    .art2 input[type=submit]{
+        margin-top: 30px;
+        background-color: #e9e5e5;
+        color: #1a1a1a;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .art2 input[type=submit]:hover {
+        background-color: #4e4e4e;
+    }
+
+
+
+    section.articulo3{
+        grid-area: articulo3;
+        background-color: #e9e5e5;
+        
+    }
+
+
+    .articul{
+        object-fit: cover;
+        padding: 5px;
+        height: 200px;
+        width: 100%;
+    }
+    
+    input[type=submit]{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        background-color: #1a1a1a;
+        color: #e9e5e5;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    input[type=submit]:hover{
+        background-color: #444444;
+    }
+    /*** Fin blog***/
+
+
+
+
+
+
+
+    /*** Leer_articulo***/
+    .seccion1{
+        text-align: center;
+        margin: 30px;
+    }
+    .seccion1::first-letter{
+      font-size: 40px;
+    }
+    
+
+    .fecha{
+        text-align: left;
+    }
+
+
+    .fotoarticul{
+        width: 100%;
+        height: 300px;
+        filter: grayscale(100%);
+    }
+    .fotoarticul:hover{
+        width: 99%;
+        height: 290px;
+        transition: all 0.6s;
+        cursor: crosshair;
+    }
+
+
+    .seccion2{
+        text-align: center;
+        margin: 30px;
+    }
+    .seccion2::first-letter{
+        font-size: 40px;
+      }
+
+
+    article{
+        margin-bottom: 200px;
+    }
+    /*** Fin Leer_articulo***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+/*** Version Tablet***/
+    @media (max-width: 1049px) {
+
+   /*** Pagina historia***/
+        #logostipos {
+          display:block;
+        }
+   /*** Fin pagina historia***/
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Version Mobile***/
+      @media (max-width: 750px){
+
+   /*** Pagina información***/
+        .RedesSociales img{
+            display: block;
+            margin: auto;
+            padding: 10px;
+            height: 200px;
+            width: 400px;
+        }
+   /*** Fin pagina información***/
+
+
+
+
+
+  /*** Pagina contacto***/
+        .cohetecontac{
+            display: block;
+        }
+        .coe1 {
+            width: 100%;
+            height: 250px;
+        }
+        .coe2 {
+            width: 100%;
+            height: 250px;
+        }
+        .coe3 {
+            width: 100%;
+            height: 250px;
+
+        }
+  /*** Fin pagina contacto***/
+      }
