@@ -10,7 +10,7 @@
 
     <link rel="shortcut icon" href="../Imagenes/mfl-32x32.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../estilos.scss/estilos.css">
 
     <title>MFL</title>
 </head>
@@ -57,6 +57,13 @@
 
       
 
+            <!-- bara de indicación-->
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+
 
         <strong>
             <h1>¿Houston, tenemos un problema?</h1>
@@ -71,9 +78,10 @@
           <div class="row">
             <section class="nright col-md-6">
 
-              <section class="comentario">
-                <label for="mensaje">Contános, ¿Qué problema tuviste?</label>
-                <textarea id="mensaje" name="mensaje" placeholder="..."></textarea>
+              <section>
+                <label for="text" class="comentarioNO">Contános, ¿Qué problema tuviste?</label>
+                <br>
+                <input type="text" name="text" class="textoNO" placeholder=" ...">
               </section>
       
               <div class="botonNO">
@@ -122,6 +130,9 @@
             <img src="../Imagenes/cohete_boton.png" alt="">
         </a>
     </footer>
+
+    
+    <script src="../main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
