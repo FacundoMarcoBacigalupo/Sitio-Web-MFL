@@ -1,0 +1,23 @@
+                                                        //Botones
+
+input[type=submit]{
+    background-image: linear-gradient(to right, $color4 0%, #434343 51%, $color4 100%);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: $color3;            
+    box-shadow: 0 0 20px $color3;
+    border-radius: 10px;
+    &:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+        transition: all .9s
+    }
+    &:active{
+        scale: 0.8;
+        transition: all .8s
+    }
+}

@@ -1,6 +1,6 @@
                                                         //Menu
 
-//Barra de navegacion
+            //Barra de navegacion
 .logo{
     margin: 0px;
     padding: 0px;
@@ -9,10 +9,12 @@
     border-radius: 10px;
     &:hover{
         cursor: pointer;
-        height: 52px;
         border-radius: 20px;
-        filter: brightness(100%);
         transition: 1.5s;
+    }
+    &:active{
+        scale: 0.8;
+        transition: all .8s
     }
 }
 
@@ -26,4 +28,29 @@
 nav{
     background-color: $color4;
 }
-//Fin barra de navegacion
+
+.efecto:active{
+    scale: 0.8;
+    transition: all .8s
+}
+
+
+
+            //Efecto linea
+.underline-linea::after{
+    margin: auto;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: $color3;
+    display: block;
+    transition: all .5s;
+
+}
+
+.underline-linea:hover::after{
+    width: 80%;
+}
+            //Fin efecto linea
+
+//Fin barra de navegacion*
