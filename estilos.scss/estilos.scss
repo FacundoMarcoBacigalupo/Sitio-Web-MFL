@@ -91,7 +91,7 @@ h2{
             //Fin seccion estas
 
 p {
-font-size: 15px;
+font-size: 16px;
 }
 
 
@@ -300,77 +300,100 @@ font-size: 20px;
     border-bottom: $borde_abajo;
 }
 
-
-.containerInfo{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto auto;
-
-    grid-template-areas:
-    "imagenesinfo imagenesinfo imagenesinfo"
-    "skill1 skill2 skill3"
-    "skill4 skill5 skill6";
-
-    grid-gap: 20px;
-    padding: 10px
+.imagenesInfo img{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
+.containerSkills{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
 
-
-.imagenesinfo{
-    grid-area: imagenesinfo;
-    object-fit: cover;
+    grid-template-areas:
+        "skill1 skill2 skill3"
+        "skill4 skill5 skill6";
+    grid-gap: 10px;
 }
 
 .skill1{
     grid-area: skill1;
+    width: 60%;
+    h2{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-top: 20px;
+        text-align: center;
+    }
 }
+
 .skill2{
     grid-area: skill2;
+    width: 60%;
+    h2{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-top: 20px;
+        text-align: center;
+    }
 }
+
 .skill3{
     grid-area: skill3;
+    width: 60%;
+    h2{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-top: 20px;
+        text-align: center;
+    }
 }
+
 .skill4{
     grid-area: skill4;
+    width: 60%;
+    h2{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-top: 20px;
+        text-align: center;
+    }
 }
+
 .skill5{
     grid-area: skill5;
+    width: 60%;
+    h2{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-top: 20px;
+        text-align: center;
+    }
 }
+
 .skill6{
     grid-area: skill6;
-}
-
-
-.cuerpoCarta{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.carta{
-    box-sizing: border-box;
-    padding: 5px 5px 5px 5px;
-    transition: width 2s, background-color 1s, box-shadow 1s;
-    border-radius: 20px;
-    background-color: $color4;
-    color: $color3;
-    &:hover{
-    color: $color4;
-    box-shadow: 0 8px 8px 0 $color4;
-    background-color: $color3;}
-}
-.textoArriba{
-    font-size: 25px;
-}
-.textoAbajo{
-    font-size: 18px;
-}
-
-
-.equipo, .galaxia, .equipo2{
-    width: 100%;
-    height: 500px;
+    width: 60%;
+    h2{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-top: 20px;
+        text-align: center;
+    }
 }
                                                         //Fin pagina Información
 
@@ -517,20 +540,10 @@ font-size: 20px;
     font-weight: bold;
     padding-top: 10px;
     padding-left: 25px;
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
 }
             //Fin fotos
-
-
-.frasesMotivacionales{
-    font-size: 15px;
-    font-weight: bold;
-    margin: 10px;
-    &::first-letter{
-        font-size: 20px;
-    }
-}
                                                         //Fin pagina historia
 
 
@@ -562,7 +575,7 @@ font-size: 20px;
     color: $color3;
     border-color: $color4;
     border-width: 2px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     border-style: solid;
     text-align: center;
@@ -631,7 +644,7 @@ font-size: 20px;
     }
 
     &__intro{
-        font-size: 15px;
+        font-size: 16px;
         font-weight: bold
     }
 
@@ -765,7 +778,7 @@ h2 {
 .title{
     h1{
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     }
     h2{
     text-align: center;
@@ -943,10 +956,53 @@ article{
 
 
 
+                                                        //Version Tablet
+@media (max-width: 1249px){
+.containerSkills{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    
+    grid-template-areas:
+        "skill1 skill2"
+        "skill3 skill4"
+        "skill5 skill6";
+    
+    padding: 10px;
+}
+
+.skill1{
+    grid-area: skill1;
+}
+
+.skill2{
+    grid-area: skill2;
+}
+
+.skill3{
+    grid-area: skill3;
+}
+
+.skill4{
+    grid-area: skill4;
+}
+
+.skill5{
+    grid-area: skill5;
+}
+
+.skill6{
+    grid-area: skill6;
+}
+}
+
+
+
+
+
 
                                                         //Version Mobile
 @media (max-width: 750px){
-
                                                         //Pagina servicios
 .flex-container {
     display: flex;
@@ -959,8 +1015,6 @@ article{
                                                         //Fin pagina servicios
 
 
-
-
                                                         //Pagina información
 .RedesSociales{
     display: block;
@@ -969,8 +1023,6 @@ article{
 }
 }
                                                         //Fin pagina información
-
-
 
 
                                                         //Pagina contacto
@@ -1007,6 +1059,46 @@ article{
         width: 400px;
     }
                                                             //Fin pagina servicios
+
+.containerSkills{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
+    grid-template-areas:
+        "skill1"
+        "skill2"
+        "skill3"
+        "skill4"
+        "skill5"
+        "skill6";
+    
+    padding: 10px;
+}
+
+.skill1{
+    grid-area: skill1;
+}
+
+.skill2{
+    grid-area: skill2;
+}
+
+.skill3{
+    grid-area: skill3;
+}
+
+.skill4{
+    grid-area: skill4;
+}
+
+.skill5{
+    grid-area: skill5;
+}
+
+.skill6{
+    grid-area: skill6;
+}
 }
 
 
@@ -1035,18 +1127,51 @@ article{
             "articulo2"
             "articulo3";
         grid-gap: 20px;
-        margin: 20px;
     }
 
                                                             //Fin pagina blog
+
+.containerSkills{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
+    grid-template-areas:
+        "skill1"
+        "skill2"
+        "skill3"
+        "skill4"
+        "skill5"
+        "skill6";
+    
+    padding: 10px;
+    margin: 0 auto;
 }
 
+.skill1{
+    grid-area: skill1;
+}
 
+.skill2{
+    grid-area: skill2;
+}
 
+.skill3{
+    grid-area: skill3;
+}
 
+.skill4{
+    grid-area: skill4;
+}
 
+.skill5{
+    grid-area: skill5;
+}
 
-
+.skill6{
+    grid-area: skill6;
+}
+}
 
 
 
@@ -1056,3 +1181,4 @@ article{
 @import "_progressBarra";
 @import "_botones";
 @import "_botonSubir";
+@import "_frasesMotivacionales";

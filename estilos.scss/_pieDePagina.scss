@@ -16,9 +16,7 @@
 
 .fotoFooter{
     grid-area: fotoFooter;
-    padding-top: 40px;
-    padding-left: 80px;
-    border-radius: 90px;
+    border-radius: 60px;
 }
 
 .puertoFooter{
@@ -85,6 +83,7 @@
 
 
 .serviciosFooter{
+    grid-area: serviciosFooter;
     text-align: center;
     h2{
         font-size: 30px;
@@ -99,7 +98,7 @@
         text-decoration: none;
     }
     li{
-        font-size: 15px;  
+        font-size: 16px;  
         padding: 5px;
     }
 }
@@ -107,7 +106,7 @@
 .copyrightFooter{
     grid-area: copyrightFooter;
     padding: 5px 5px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     text-align: center;
 }
