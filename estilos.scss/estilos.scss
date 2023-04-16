@@ -133,7 +133,8 @@ font-size: 16px;
 .quienesSomos img:last-child{
     border-radius: 20px;
     position: absolute;
-    width: 100%;
+    width: 75%;
+    height: auto;
     bottom: 0;
     left: 0;
     right: 0;
@@ -166,7 +167,7 @@ font-size: 16px;
 .quienesSomos:hover img:last-child{
     width: 100%;
     opacity: 1;
-    transform: translateY(-20%);
+    transform: translateY(-10%);
 }
             //Fin foto quienes somos
 
