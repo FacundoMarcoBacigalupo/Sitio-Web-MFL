@@ -75,8 +75,8 @@ p {
 }
 
 .quienesSomos img:first-child {
-  box-shadow: 0 60px 60px -60px #000;
   border-radius: 20px;
+  box-shadow: 0 60px 60px -60px #000;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -84,8 +84,9 @@ p {
 }
 
 .quienesSomos img:last-child {
+  border-radius: 20px;
   position: absolute;
-  width: 74%;
+  width: 100%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -118,7 +119,7 @@ p {
 .quienesSomos:hover img:last-child {
   width: 100%;
   opacity: 1;
-  transform: translateY(10%);
+  transform: translateY(-20%);
 }
 
 .marquee {
@@ -139,7 +140,7 @@ p {
 .marquee__content {
   display: flex;
   list-style: none;
-  animation: scrolling 40s linear infinite;
+  animation: scrolling 20s linear infinite;
 }
 
 .marquee__item img {
@@ -267,7 +268,7 @@ strong {
 }
 .card img {
   width: 100%;
-  height: auto;
+  height: 100px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
