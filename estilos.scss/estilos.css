@@ -243,90 +243,47 @@ strong {
   margin-bottom: 40px;
 }
 
-.containerSkills {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto auto;
-  grid-template-areas: "skill1 skill2 skill3" "skill4 skill5 skill6";
-  grid-gap: 10px;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.skill1 {
-  grid-area: skill1;
-  width: 60%;
-}
-.skill1 h2 {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.skill1 p {
-  margin-top: 20px;
-  text-align: center;
+.skill {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.skill2 {
-  grid-area: skill2;
-  width: 60%;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #1a1a1a;
+  background-color: #fff;
+  width: 100%;
 }
-.skill2 h2 {
-  font-weight: bold;
-  margin-bottom: 20px;
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.skill2 p {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.skill3 {
-  grid-area: skill3;
-  width: 60%;
-}
-.skill3 h2 {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.skill3 p {
-  margin-top: 20px;
-  text-align: center;
+.card:hover {
+  transform: translateY(-5%);
+  transition: all 1s;
 }
 
-.skill4 {
-  grid-area: skill4;
-  width: 60%;
+.card-content {
+  padding: 20px;
 }
-.skill4 h2 {
-  font-weight: bold;
-  margin-bottom: 20px;
+.card-content h2 {
+  margin-top: 0;
 }
-.skill4 p {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.skill5 {
-  grid-area: skill5;
-  width: 60%;
-}
-.skill5 h2 {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.skill5 p {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.skill6 {
-  grid-area: skill6;
-  width: 60%;
-}
-.skill6 h2 {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.skill6 p {
-  margin-top: 20px;
-  text-align: center;
+.card-content p {
+  margin-bottom: 0;
 }
 
 #equipo {
@@ -785,6 +742,9 @@ h2 {
   text-align: center;
   margin: 30px;
 }
+.seccion1 h1 {
+  font-weight: bold;
+}
 .seccion1::first-letter {
   font-size: 40px;
 }
@@ -802,41 +762,17 @@ h2 {
   text-align: center;
   margin: 30px;
 }
+.seccion2 h2 {
+  font-weight: bold;
+}
 .seccion2::first-letter {
   font-size: 40px;
 }
 
 article {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
-@media (max-width: 1249px) {
-  .containerSkills {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto;
-    grid-template-areas: "skill1 skill2" "skill3 skill4" "skill5 skill6";
-    padding: 10px;
-  }
-  .skill1 {
-    grid-area: skill1;
-  }
-  .skill2 {
-    grid-area: skill2;
-  }
-  .skill3 {
-    grid-area: skill3;
-  }
-  .skill4 {
-    grid-area: skill4;
-  }
-  .skill5 {
-    grid-area: skill5;
-  }
-  .skill6 {
-    grid-area: skill6;
-  }
-}
 @media (max-width: 750px) {
   .flex-container {
     display: flex;
@@ -845,27 +781,19 @@ article {
   .c-card {
     width: 300px;
   }
-  .RedesSociales {
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
+  .coe1 {
+    width: 100%;
+    height: 250px;
+  }
+  .coe2 {
+    width: 100%;
+    height: 250px;
+  }
+  .coe3 {
+    width: 100%;
+    height: 250px;
   }
 }
-.coe1 {
-  width: 100%;
-  height: 250px;
-}
-
-.coe2 {
-  width: 100%;
-  height: 250px;
-}
-
-.coe3 {
-  width: 100%;
-  height: 250px;
-}
-
 @media (min-width: 450px) and (max-width: 750px) {
   .flex-container {
     display: flex;
@@ -874,30 +802,8 @@ article {
   .c-card {
     width: 400px;
   }
-  .containerSkills {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    grid-template-areas: "skill1" "skill2" "skill3" "skill4" "skill5" "skill6";
-    padding: 10px;
-  }
-  .skill1 {
-    grid-area: skill1;
-  }
-  .skill2 {
-    grid-area: skill2;
-  }
-  .skill3 {
-    grid-area: skill3;
-  }
-  .skill4 {
-    grid-area: skill4;
-  }
-  .skill5 {
-    grid-area: skill5;
-  }
-  .skill6 {
-    grid-area: skill6;
+  .skill {
+    flex-basis: calc(50% - 20px);
   }
 }
 @media (max-width: 600px) {
@@ -908,31 +814,10 @@ article {
     grid-template-areas: "subidas" "podcast" "articulo1" "articulo2" "articulo3";
     grid-gap: 20px;
   }
-  .containerSkills {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    grid-template-areas: "skill1" "skill2" "skill3" "skill4" "skill5" "skill6";
-    padding: 10px;
-    margin: 0 auto;
-  }
-  .skill1 {
-    grid-area: skill1;
-  }
-  .skill2 {
-    grid-area: skill2;
-  }
-  .skill3 {
-    grid-area: skill3;
-  }
-  .skill4 {
-    grid-area: skill4;
-  }
-  .skill5 {
-    grid-area: skill5;
-  }
-  .skill6 {
-    grid-area: skill6;
+}
+@media screen and (max-width: 480px) {
+  .skill {
+    flex-basis: 100%;
   }
 }
 .logo {

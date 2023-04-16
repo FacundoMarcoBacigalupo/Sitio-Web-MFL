@@ -307,92 +307,47 @@ font-size: 20px;
     margin-bottom: 40px;
 }
 
-.containerSkills{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto;
 
-    grid-template-areas:
-        "skill1 skill2 skill3"
-        "skill4 skill5 skill6";
-    grid-gap: 10px;
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.skill1{
-    grid-area: skill1;
-    width: 60%;
-    h2{
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    p{
-        margin-top: 20px;
-        text-align: center;
-    }
+.skill{
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    padding: 20px;
 }
 
-.skill2{
-    grid-area: skill2;
-    width: 60%;
-    h2{
-        font-weight: bold;
-        margin-bottom: 20px;
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px $color4;
+    background-color: #fff;
+    width: 100%;
+    img{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
-    p{
-        margin-top: 20px;
-        text-align: center;
+    &:hover{
+        transform: translateY(-5%);
+        transition: all 1s;
     }
 }
 
-.skill3{
-    grid-area: skill3;
-    width: 60%;
+.card-content{
+    padding: 20px;
     h2{
-        font-weight: bold;
-        margin-bottom: 20px;
+        margin-top: 0;
     }
     p{
-        margin-top: 20px;
-        text-align: center;
-    }
-}
-
-.skill4{
-    grid-area: skill4;
-    width: 60%;
-    h2{
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    p{
-        margin-top: 20px;
-        text-align: center;
-    }
-}
-
-.skill5{
-    grid-area: skill5;
-    width: 60%;
-    h2{
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    p{
-        margin-top: 20px;
-        text-align: center;
-    }
-}
-
-.skill6{
-    grid-area: skill6;
-    width: 60%;
-    h2{
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    p{
-        margin-top: 20px;
-        text-align: center;
+        margin-bottom: 0;
     }
 }
                                                         //Fin pagina Información
@@ -915,6 +870,9 @@ h2 {
 
                                                         //Leer_articulo
 .seccion1{
+    h1{
+        font-weight: bold;
+    }
     text-align: center;
     margin: 30px;
     &::first-letter{
@@ -932,6 +890,9 @@ h2 {
 }
 
 .seccion2{
+    h2{
+        font-weight: bold;
+    }
     text-align: center;
     margin: 30px;
     &::first-letter{
@@ -940,7 +901,7 @@ h2 {
 }
 
 article{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
                                                         //Fin leer_articulo
 
@@ -956,45 +917,25 @@ article{
 
 
 
-                                                        //Version Tablet
-@media (max-width: 1249px){
-.containerSkills{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto;
-    
-    grid-template-areas:
-        "skill1 skill2"
-        "skill3 skill4"
-        "skill5 skill6";
-    
-    padding: 10px;
-}
 
-.skill1{
-    grid-area: skill1;
-}
 
-.skill2{
-    grid-area: skill2;
-}
 
-.skill3{
-    grid-area: skill3;
-}
 
-.skill4{
-    grid-area: skill4;
-}
 
-.skill5{
-    grid-area: skill5;
-}
 
-.skill6{
-    grid-area: skill6;
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1015,16 +956,6 @@ article{
                                                         //Fin pagina servicios
 
 
-                                                        //Pagina información
-.RedesSociales{
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-}
-}
-                                                        //Fin pagina información
-
-
                                                         //Pagina contacto
 .coe1 {
     width: 100%;
@@ -1041,6 +972,14 @@ article{
     height: 250px;
 }
                                                         //Fin pagina contacto
+}
+
+
+
+
+
+
+
 
 
 
@@ -1060,51 +999,13 @@ article{
     }
                                                             //Fin pagina servicios
 
-.containerSkills{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    
-    grid-template-areas:
-        "skill1"
-        "skill2"
-        "skill3"
-        "skill4"
-        "skill5"
-        "skill6";
-    
-    padding: 10px;
+
+                                                            //Pagina Información
+    .skill{
+        flex-basis: calc(50% - 20px);
+    }
+                                                            //Fin pagina Información
 }
-
-.skill1{
-    grid-area: skill1;
-}
-
-.skill2{
-    grid-area: skill2;
-}
-
-.skill3{
-    grid-area: skill3;
-}
-
-.skill4{
-    grid-area: skill4;
-}
-
-.skill5{
-    grid-area: skill5;
-}
-
-.skill6{
-    grid-area: skill6;
-}
-}
-
-
-
-
-
 
 
 
@@ -1128,50 +1029,28 @@ article{
             "articulo3";
         grid-gap: 20px;
     }
-
+}
                                                             //Fin pagina blog
 
-.containerSkills{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    
-    grid-template-areas:
-        "skill1"
-        "skill2"
-        "skill3"
-        "skill4"
-        "skill5"
-        "skill6";
-    
-    padding: 10px;
-    margin: 0 auto;
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+                                                            //Pagina Información
+    .skill{
+        flex-basis: 100%;
+    }
+                                                            //Fin pagina Información
 }
 
-.skill1{
-    grid-area: skill1;
-}
 
-.skill2{
-    grid-area: skill2;
-}
 
-.skill3{
-    grid-area: skill3;
-}
-
-.skill4{
-    grid-area: skill4;
-}
-
-.skill5{
-    grid-area: skill5;
-}
-
-.skill6{
-    grid-area: skill6;
-}
-}
 
 
 
