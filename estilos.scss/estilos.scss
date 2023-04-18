@@ -1,10 +1,10 @@
 //Hoja de estilos SCSS
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 
 //Tipografias
 $font: 'Space Grotesk', sans-serif;
+
 
 
 //Colores
@@ -26,18 +26,26 @@ $borde: 10px solid;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 } 
 
-html{
-    scroll-behavior: smooth;
-}
 
 body{
-    background-color: #e9e5e5;
-    background-image: linear-gradient(123deg, #e9e5e5 70%, #1a1a1a);
+    background-color: $color3;
+    background-image: linear-gradient(123deg, $color3 70%, $color4);
     color: $color1;
     font-family: $font;
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: $color4;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $color1;
+    }
 }
+
 
 
 h1{
@@ -101,6 +109,7 @@ font-size: 16px;
     background-position: center;
     background-size: cover;
     height: 600px;
+    width: 100%;
     margin-bottom: 0;
     border-radius: 0;
     text-shadow: 0 0 10px $color4;
@@ -192,7 +201,7 @@ font-size: 16px;
 .marquee__content {
     display: flex;
     list-style: none;
-    animation: scrolling 20s linear infinite;
+    animation: scrolling 30s linear infinite;
 }
 
 .marquee__item img{
@@ -340,6 +349,7 @@ font-size: 20px;
     &:hover{
         transform: translateY(-5%);
         transition: all 1s;
+        box-shadow: 10px 10px 10px $color4;
     }
 }
 
@@ -469,7 +479,8 @@ font-size: 20px;
     margin: 30px;
 }
 .logos {
-    padding: 0px 0px 0px 25px;
+    padding-left: 25px;
+    padding-right: 5px;
     width: 280px;
     height: 140px;
 }
@@ -524,18 +535,18 @@ font-size: 20px;
 
 
 
-.descuento {
+.GRATIS {
     height: 40px;
     padding: 10px;
     margin: 20px;
-    background: $color1;
+    margin-bottom: 50px;
+    background: $color2;
     color: $color3;
-    border-color: $color4;
-    border-width: 2px;
     font-size: 16px;
     font-weight: bold;
-    border-style: solid;
     text-align: center;
+    box-shadow: 0 5px 10px $color4;
+    border-radius: 10px;
 }
 
 
@@ -612,6 +623,40 @@ font-size: 20px;
 
 .c-card--center{
     text-align: center;
+}
+
+
+.notificacion{
+    font-weight: 500;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: max-content;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    background-color: $color4;
+    color: $color3;
+    box-shadow: 0 1px 10px $color1;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: desvanecer 4s linear forwards;
+    a{
+        color: $color3;
+        text-decoration: none;
+    }
+}
+@keyframes desvanecer{
+    5%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    90%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
                                                         //Fin pagina servicios
 
@@ -1031,8 +1076,19 @@ article{
             "articulo3";
         grid-gap: 20px;
     }
-}
                                                             //Fin pagina blog
+
+
+
+
+                                                                //Pagina Home
+#estas{
+    height: 400px;
+}
+                                                            //Fin pagina Home
+}
+
+
 
 
 
@@ -1049,6 +1105,15 @@ article{
         flex-basis: 100%;
     }
                                                             //Fin pagina Información
+
+
+
+                                                            //Pagina Información
+.logos {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+                                                            //Fin pagina historia
 }
 
 

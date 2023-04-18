@@ -5,9 +5,6 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -16,6 +13,15 @@ body {
   background-image: linear-gradient(123deg, #e9e5e5 70%, #1a1a1a);
   color: #444444;
   font-family: "Space Grotesk", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #444444;
 }
 
 h1 {
@@ -58,6 +64,7 @@ p {
   background-position: center;
   background-size: cover;
   height: 600px;
+  width: 100%;
   margin-bottom: 0;
   border-radius: 0;
   text-shadow: 0 0 10px #1a1a1a;
@@ -141,7 +148,7 @@ p {
 .marquee__content {
   display: flex;
   list-style: none;
-  animation: scrolling 20s linear infinite;
+  animation: scrolling 30s linear infinite;
 }
 
 .marquee__item img {
@@ -276,6 +283,7 @@ strong {
 .card:hover {
   transform: translateY(-5%);
   transition: all 1s;
+  box-shadow: 10px 10px 10px #1a1a1a;
 }
 
 .card-content {
@@ -389,7 +397,8 @@ strong {
 }
 
 .logos {
-  padding: 0px 0px 0px 25px;
+  padding-left: 25px;
+  padding-right: 5px;
   width: 280px;
   height: 140px;
 }
@@ -437,18 +446,18 @@ strong {
   margin-bottom: 20px;
 }
 
-.descuento {
+.GRATIS {
   height: 40px;
   padding: 10px;
   margin: 20px;
-  background: #444444;
+  margin-bottom: 50px;
+  background: #202020;
   color: #e9e5e5;
-  border-color: #1a1a1a;
-  border-width: 2px;
   font-size: 16px;
   font-weight: bold;
-  border-style: solid;
   text-align: center;
+  box-shadow: 0 5px 10px #1a1a1a;
+  border-radius: 10px;
 }
 
 .flex-container {
@@ -518,6 +527,40 @@ strong {
   text-align: center;
 }
 
+.notificacion {
+  font-weight: 500;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  color: #e9e5e5;
+  box-shadow: 0 1px 10px #444444;
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  animation: desvanecer 4s linear forwards;
+}
+.notificacion a {
+  color: #e9e5e5;
+  text-decoration: none;
+}
+
+@keyframes desvanecer {
+  5% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 h1 {
   font-size: 35px;
   text-align: center;
@@ -816,10 +859,17 @@ article {
     grid-template-areas: "subidas" "podcast" "articulo1" "articulo2" "articulo3";
     grid-gap: 20px;
   }
+  #estas {
+    height: 400px;
+  }
 }
 @media screen and (max-width: 480px) {
   .skill {
     flex-basis: 100%;
+  }
+  .logos {
+    padding-left: 15px;
+    padding-right: 10px;
   }
 }
 .logo {
@@ -941,6 +991,10 @@ nav {
 .serviciosFooter h2::first-letter {
   font-size: 40px;
 }
+.serviciosFooter h2:active {
+  scale: 0.8;
+  transition: all 0.8s;
+}
 .serviciosFooter a {
   color: #e9e5e5;
   text-decoration: none;
@@ -1008,11 +1062,11 @@ nav {
 
 .progress-bar {
   height: 5px;
-  background: rgb(0, 0, 0);
+  background: #1a1a1a;
   width: 0%;
 }
 
-input[type=submit] {
+button[type=submit] {
   background-image: linear-gradient(to right, #1a1a1a 0%, #434343 51%, #1a1a1a 100%);
   padding: 10px;
   margin: 10px;
@@ -1023,13 +1077,13 @@ input[type=submit] {
   box-shadow: 0 0 20px #e9e5e5;
   border-radius: 10px;
 }
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
   transition: all 0.9s;
 }
-input[type=submit]:active {
+button[type=submit]:active {
   scale: 0.8;
   transition: all 0.8s;
 }
