@@ -148,7 +148,7 @@ p {
 .marquee__content {
   display: flex;
   list-style: none;
-  animation: scrolling 30s linear infinite;
+  animation: scrolling 40s linear infinite;
 }
 
 .marquee__item img {
@@ -578,6 +578,7 @@ h1 {
 
 .comentarioNO {
   margin-top: 20px;
+  margin-left: 10px;
   font-size: 18px;
   text-align: left;
   font-weight: bold;
@@ -590,13 +591,12 @@ h1 {
   background-color: #444444;
   border: 1ex solid none;
   border-top-width: 170px;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin: 15px;
   padding: 0;
   color: #444444;
   outline: 7px solid #444444;
   height: 200px;
-  width: 100%;
+  width: 90%;
   font-size: 20px;
   text-align: left;
   transition: all 1s;
@@ -613,20 +613,13 @@ h1 {
   background-color: #e9e5e5;
 }
 
-.grangalaxia img {
-  height: 300px;
+.gifNO {
   width: 100%;
-  padding: 5px;
-}
-.grangalaxia img:hover {
-  filter: grayscale(100%);
-  cursor: cell;
-  transform: scale(0.9);
-  transition: 1.1s;
+  height: 400px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .whatsapp {
@@ -887,10 +880,20 @@ article {
   height: 30px;
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-toggler {
   color: #1a1a1a;
   border-color: transparent;
   transition: all 2s;
+}
+
+.navbarColor {
+  background-color: #1a1a1a;
+}
+.navbarColor:hover {
+  background-image: linear-gradient(to right, #202020 51%, #1a1a1a 100%);
+}
+.navbarColor a {
+  color: #e9e5e5;
 }
 
 .logo {
@@ -1099,8 +1102,9 @@ button[type=submit] {
   text-transform: uppercase;
   background-size: 200% auto;
   color: #e9e5e5;
-  box-shadow: 0 0 20px #e9e5e5;
-  border-radius: 10px;
+  box-shadow: 0 0 10px #1a1a1a;
+  border-radius: 20px;
+  border: 0;
 }
 button[type=submit]:hover {
   background-position: right center;

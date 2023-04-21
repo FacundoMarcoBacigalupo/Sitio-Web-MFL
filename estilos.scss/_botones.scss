@@ -8,8 +8,9 @@ button[type=submit]{
     text-transform: uppercase;
     background-size: 200% auto;
     color: $color3;            
-    box-shadow: 0 0 20px $color3;
-    border-radius: 10px;
+    box-shadow: 0 0 10px $color4;
+    border-radius: 20px;
+    border: 0;
     &:hover {
         background-position: right center;
         color: #fff;

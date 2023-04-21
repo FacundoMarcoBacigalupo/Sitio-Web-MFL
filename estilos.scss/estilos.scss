@@ -201,7 +201,7 @@ font-size: 16px;
 .marquee__content {
     display: flex;
     list-style: none;
-    animation: scrolling 30s linear infinite;
+    animation: scrolling 40s linear infinite;
 }
 
 .marquee__item img{
@@ -678,7 +678,8 @@ h1 {
 
 
 .comentarioNO{
-    margin-top: 20px;
+    margin-top:20px;
+    margin-left:10px;
     font-size: 18px;
     text-align: left;
     font-weight: bold;
@@ -691,13 +692,12 @@ h1 {
     background-color: $color1;
     border: 1ex solid none;
     border-top-width: 170px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin: 15px;
     padding: 0;
     color: $color1;
     outline: 7px solid $color1;
     height: 200px;
-    width: 100%;
+    width: 90%;
     font-size: 20px;
     text-align: left;
     transition: all 1s;
@@ -713,27 +713,17 @@ h1 {
 }
 
 
-
-.grangalaxia{
-    img{
-    height: 300px;
+.gifNO{
     width: 100%;
-    padding: 5px;
-    }
-    img:hover{
-        filter: grayscale(100%);
-        cursor: cell;
-        transform: scale(0.9);
-        transition: 1.1s;
-    }
-} 
+    height: 400px;
+}
                                                         //Fin pagina NO
 
 
 
                                                         //Voy a este planeta
 h2 {
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .whatsapp{
