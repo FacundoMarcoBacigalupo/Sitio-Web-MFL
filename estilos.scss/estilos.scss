@@ -500,7 +500,7 @@ font-size: 20px;
     border-radius: 10px;
     text-align: left;
     &:hover{
-        scale: 1.2;
+        scale: 1.1;
         transition: all 1s;
     }
 } 
@@ -524,7 +524,7 @@ font-size: 20px;
 
 
 
-                                                        //Pagina servicios
+                                                        //Pagina Gestion de Redes Sociales
 #servi{
     border-bottom: $borde_abajo;
 }
@@ -666,7 +666,7 @@ font-size: 20px;
         transform: translateY(0);
     }
 }
-                                                        //Fin  Pagina servicios
+                                                        //Fin  Gestion de Redes Sociales
 
 
 
@@ -953,6 +953,324 @@ article{
 
 
 
+                                                        //Pagina servicios
+.containerServi{
+    display: grid;
+    display: flex;
+    height: 800px;
+    width: 100%;
+    margin: 0;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+        "DesarrolloWeb GestionRRSS GoogleADS";
+
+    overflow: hidden;
+}
+
+
+.seccionServi{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: flex 1s ease;
+    filter: grayscale(100%);
+    &:hover{
+        flex: 2;
+        filter: grayscale(0%);
+    }
+    h2{
+        padding: 20px;
+        color: $color3;
+        background-color: $color4;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px #000;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:active{
+        scale: .8;
+        transition: all 1s;
+    }
+}
+
+
+
+
+
+#DesarrolloWeb{
+    grid-area: DesarrolloWeb;
+    background-image: url(../Imagenes/DesarrolloWeb.jpg);
+    width: 100%;
+}
+
+#GestionRRSS{
+    grid-area: GestionRRSS;
+    background-image: url(../Imagenes/GestionRRSS.jpg);
+    width: 100%;
+}
+
+#GoogleADS{
+    grid-area: GoogleADS;
+    background-image: url(../Imagenes/GoogleADS.jpg);
+    width: 100%;
+}
+                                                        //Fin Pagina Servicios
+
+
+
+
+                                                        //Pagina Desarrollo Web
+#DesarrolloWeb1{
+    background-image: url(../Imagenes/Galaxia\ Seyfert.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#DesarrolloWeb2{
+    background-image: url(../Imagenes/Galaxia\ Starburst.jpg);
+    background-size: cover;
+    background-position: center;
+}
+                                                        //Fin pagina Desarrollo Web
+
+                                                        //Pagina Desarrollo Web 1
+.galaxiaSeyfert{
+    background-image: url(../Imagenes/Galaxia\ Seyfert.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    border-radius: 0;
+    color: $color3;
+    font-weight: bold;
+    h1{
+        padding-bottom: 20px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.galaxiaSeyfertInfo1{
+    color: $color4;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "tituloDW tituloDW tituloDW"
+        "descripcionDW descripcionDW descripcionDW"
+        "DW1 DW2 DW3"
+        "DW4 DW4 DW4";
+    grid-gap: 30px;
+    margin: 20px;
+}
+
+.contenidoDW{
+    h3{
+        font-weight: bold;
+    }
+    h3 img{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+
+
+.tituloDW{
+    grid-area: tituloDW;
+    font-size: 40px;
+    font-weight: bold;
+}
+.descripcionDW{
+    grid-area: descripcionDW;  
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.DW1{
+    grid-area: DW1; 
+}
+.DW2{
+    grid-area: DW2; 
+}
+.DW3{
+    grid-area: DW3; 
+}
+.DW4{
+    grid-area: DW4; 
+}
+
+
+
+.galaxiaSeyfertInfo2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "DW5 DW6 DW7";
+    grid-gap: 30px;
+    background-image: url(../Imagenes/Galaxia\ Seyfert2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $color3;
+}
+
+.DW5{
+    margin: 20px;
+    text-align: center;
+    grid-area: DW5;
+    color: $color3;
+}
+.DW6{
+    margin: 20px;
+    grid-area: DW6;
+    color: $color3; 
+}
+.DW7{
+    margin: 20px;
+    grid-area: DW7;
+    color: $color3; 
+}
+
+
+
+.galaxiaSeyfertInfo3{
+    color: $color4;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "DW8 DW9 DW9"
+        "DW10 DW10 DW10";
+    grid-gap: 30px;
+    margin: 20px;
+}
+
+
+.contenidoDW{
+    h4 img{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.DW8{
+    grid-area: DW8;
+}
+.DW9{
+    grid-area: DW9;
+}
+.DW10{
+    grid-area: DW10;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.galaxiaSeyfertInfo4{
+    color: $color4;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+        "tituloDW2 tituloDW2 tituloDW2"
+        "DW11 DW12 DW13"
+        "DW14 DW14 DW14";
+    grid-gap: 30px;
+    margin: 20px;
+}
+
+.tituloDW2{
+    grid-area: tituloDW2;
+    font-size: 40px;
+    font-weight: bold;
+}
+.DW11{
+    grid-area: DW11;
+}
+.DW12{
+    grid-area: DW12;
+}
+.DW13{
+    grid-area: DW13;
+}
+.DW14{
+    grid-area: DW14;
+}
+                                                        //Fin pagina Desarrollo Web 1
+
+                                                        //Pagina Desarrollo Web 2
+.galaxiaStarburst{
+    background-image: url(../Imagenes/Galaxia\ Starburst.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    border-radius: 0;
+    color: $color3;
+    font-weight: bold;
+    h1{
+        padding-bottom: 20px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+
+.galaxiaStarburstInfo2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "DW5 DW6 DW7"
+        "DW15 DW16 DW16";
+    grid-gap: 30px;
+    background-image: url(../Imagenes/Galaxia\ Starburst2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $color3;
+}
+
+.DW5{
+    margin: 20px;
+    text-align: center;
+    grid-area: DW5;
+    color: $color3;
+}
+.DW6{
+    margin: 20px;
+    grid-area: DW6;
+    color: $color3; 
+}
+.DW7{
+    margin: 20px;
+    grid-area: DW7;
+    color: $color3; 
+}
+
+.DW15{
+    margin: 20px;
+    grid-area: DW15;
+    color: $color3; 
+}
+
+.DW16{
+    margin: 20px;
+    grid-area: DW16;
+    color: $color3; 
+}
+                                                        //Fin pagina Desarrollo Web 2
+
+
+
+
 
 
 
@@ -974,8 +1292,8 @@ article{
 
 
                                                         //Version Mobile
-@media (max-width: 750px){
-                                                        //Pagina servicios
+@media (max-width: 790px){
+                                                        //Gestion de Redes Sociales
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -984,7 +1302,7 @@ article{
 .c-card{
     width: 300px;
 }
-                                                        //Fin Pagina servicios
+                                                        //Fin Gestion de Redes Sociales
 
 
                                                         //Pagina contacto
@@ -1003,6 +1321,81 @@ article{
     height: 250px;
 }
                                                         //Fin pagina contacto
+
+
+                                                            //Pagina servicios
+    .containerServi{
+        display: grid;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "DesarrolloWeb" 
+            "GestionRRSS" 
+            "GoogleADS";
+    }
+                                                                //Fin pagina servicios
+
+
+
+                                                                //Pagina Desarrollo Web
+.galaxiaSeyfertInfo1{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "tituloDW"
+        "descripcionDW"
+        "DW1"
+        "DW2"
+        "DW3"
+        "DW4";
+}
+
+
+.galaxiaSeyfertInfo2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "DW5" 
+        "DW6" 
+        "DW7";
+}
+
+
+.galaxiaStarburstInfo2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "DW5"
+        "DW6" 
+        "DW7"
+        "DW15" 
+        "DW16";
+    grid-gap: 30px;
+    background-image: url(../Imagenes/Galaxia\ Starburst2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $color3;
+}
+
+
+.galaxiaSeyfertInfo4{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "tituloDW2"
+        "DW11" 
+        "DW12" 
+        "DW13"
+        "DW14";
+}
+                                                                //Fin pagina Desarrollo Web
 }
 
 
@@ -1019,7 +1412,7 @@ article{
 
 
 @media (min-width: 450px) and (max-width: 750px){
-                                                            //Pagina servicios
+                                                            //Pagina Gestion de Redes Sociales
     .flex-container {
         display: flex;
         flex-direction: column;
@@ -1028,7 +1421,7 @@ article{
     .c-card{
         width: 400px;
     }
-                                                            //Fin Pagina servicios
+                                                            //Fin Gestion de Redes Sociales
 
 
                                                             //Pagina Información
@@ -1098,6 +1491,25 @@ article{
     padding-right: 10px;
 }
                                                             //Fin pagina historia
+
+
+                                                            //Pagina Desarrollo Web
+.galaxiaSeyfertInfo3{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "DW8" 
+        "DW9" 
+        "DW10";
+}
+
+.DW10{
+    grid-area: DW10;
+    width: 300px;
+    text-align: left;
+}
+                                                            //Fin pagina Desarrollo Web
 }
 
 
