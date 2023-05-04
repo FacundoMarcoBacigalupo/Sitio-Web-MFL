@@ -374,9 +374,16 @@ font-size: 20px;
         border-bottom: $borde_abajo;
 }
 
+
+.posicion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #facu img{
-    width: 90%;
-    height: 500px;
+    width: 70%;
+    height: 400px;
     object-fit: cover;
     padding-top: 20px;
     border-radius: 50px;
@@ -414,8 +421,8 @@ font-size: 20px;
 
 
 #mica img{
-    width: 90%;
-    height: 500px;
+    width: 70%;
+    height: 400px;
     object-fit: cover;
     padding-top: 20px;
     border-radius: 50px;

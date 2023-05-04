@@ -1,11 +1,11 @@
 {
   "name": "codigo-sitio-web-mfl",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sito Web de MFL",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Facundo Marco Bacigalupo",
   "license": "ISC"
 }

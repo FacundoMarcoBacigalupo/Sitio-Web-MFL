@@ -305,9 +305,15 @@ strong {
   border-bottom: 3px solid #e9e5e5;
 }
 
+.posicion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #facu img {
-  width: 90%;
-  height: 500px;
+  width: 70%;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   padding-top: 20px;
@@ -344,8 +350,8 @@ strong {
 }
 
 #mica img {
-  width: 90%;
-  height: 500px;
+  width: 70%;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   padding-top: 20px;

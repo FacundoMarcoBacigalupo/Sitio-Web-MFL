@@ -1,4 +1,4 @@
-//Cuando el usuario haga scroll en la pagina, se ejecuta la funcion barraProgreso
+        //Cuando el usuario haga scroll en la pagina, se ejecuta la funcion barraProgreso
 window.onscroll = function(){barraProgreso()};
 
 function barraProgreso() {
@@ -7,7 +7,7 @@ function barraProgreso() {
         let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         let scrolled = (winScroll / height) * 100;
         
-    document.getElementById("myBar").style.width = scrolled + "%";
+    document.getElementById("miBarra").style.width = scrolled + "%";
 }
 
 
@@ -17,15 +17,15 @@ function barraProgreso() {
 
 
 
-//Cuando el usuario salga del Sitio Web se cambia el TITULO
-    let tituloPrevio = document.title
+        //Cuando el usuario salga del Sitio Web se cambia el TITULO
+    let tituloAnterior = document.title
 
 window.addEventListener("blur", () => {
-    tituloPrevio = document.title
+    tituloAnterior = document.title
     document.title = "¡Volve para despegar!"
 })
 
 
 window.addEventListener("focus", () => {
-    document.title = tituloPrevio
+    document.title = tituloAnterior
 })
