@@ -733,18 +733,30 @@ h2 {
     font-size: 23px;
 }
 
-.whatsapp{
-    width: 90%;
-    height: 390px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+.efectoImgWhats{
+    margin-top: -20px;
+    width: 100%;
+    height: 400px;
+    --g:#0000 ,#000 .5deg 90deg,#0000 91deg;
+    --m:
+    conic-gradient(from 45deg ,var(--g)) 20px 0  no-repeat,
+    conic-gradient(from 135deg,var(--g)) 0 20px  no-repeat,
+    conic-gradient(from 225deg,var(--g)) -20px 0 no-repeat,
+    conic-gradient(from 315deg,var(--g)) 0 -20px no-repeat;
+    -webkit-mask: var(--m);
+    mask: var(--m);
+    transition: .3s linear;
+    filter: grayscale(.5);
+    cursor: pointer;
     &:hover{
-        height: 390px;
-        padding: 10px;
-        opacity: 1;
-        filter: contrast(120%);
-        transition: all .7s;
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+        filter: grayscale(0);
+    }
+    &:active{
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+        filter: grayscale(0);
     }
 }
 
@@ -822,9 +834,12 @@ h2 {
         font-weight: bold;
     }
     p{
+        font-size: 16px;
         margin: 10px;
+        font-weight: bold;
     }
     a{
+        font-size: 16px;
         color: $color4;
         font-weight: bold;
     }
@@ -858,7 +873,6 @@ h2 {
     }
     a{
         color: $color3;
-        text-decoration: none;
     }
 }
 
