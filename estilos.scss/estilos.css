@@ -60,7 +60,7 @@ p {
 }
 
 #estas {
-  background-image: url(../Imagenes/cohete\ 2.jpg);
+  background-image: url(../Imagenes/coheteInicioMain.jpg);
   background-position: center;
   background-size: cover;
   height: 600px;
@@ -1211,7 +1211,7 @@ article {
     height: 400px;
   }
 }
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .skill {
     flex-basis: 100%;
   }
