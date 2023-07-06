@@ -901,19 +901,19 @@ article {
 }
 
 #DesarrolloWeb1 {
-  background-image: url(../Imagenes/Galaxia\ Seyfert.jpg);
+  background-image: url(../Imagenes/GalaxiaSeyfert.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #DesarrolloWeb2 {
-  background-image: url(../Imagenes/Galaxia\ Starburst.jpg);
+  background-image: url(../Imagenes/GalaxiaStarburst.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .galaxiaSeyfert {
-  background-image: url(../Imagenes/Galaxia\ Seyfert.jpg);
+  background-image: url(../Imagenes/GalaxiaSeyfert.jpg);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -982,7 +982,7 @@ article {
   grid-template-columns: auto auto;
   grid-template-areas: "DW5 DW6 DW7";
   grid-gap: 30px;
-  background-image: url(../Imagenes/Galaxia\ Seyfert2.jpg);
+  background-image: url(../Imagenes/GalaxiaSeyfert2.jpg);
   background-size: cover;
   background-position: center;
   color: #e9e5e5;
@@ -1069,7 +1069,7 @@ article {
 }
 
 .galaxiaStarburst {
-  background-image: url(../Imagenes/Galaxia\ Starburst.jpg);
+  background-image: url(../Imagenes/GalaxiaStarburst.jpg);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -1091,7 +1091,7 @@ article {
   grid-template-columns: auto auto;
   grid-template-areas: "DW5 DW6 DW7" "DW15 DW16 DW16";
   grid-gap: 30px;
-  background-image: url(../Imagenes/Galaxia\ Starburst2.jpg);
+  background-image: url(../Imagenes/GalaxiaStarburst2.jpg);
   background-size: cover;
   background-position: center;
   color: #e9e5e5;
