@@ -1256,7 +1256,6 @@ article{
     background-image: url(../Imagenes/GalaxiaStarburst2.jpg);
     background-size: cover;
     background-position: center;
-    color: $color3;
 }
 
 .DW5{
@@ -1426,9 +1425,11 @@ article{
 
 
 
-
-
-
+@media (max-width: 800px){
+    .galaxiaStarburstInfo2{
+        background-image: url(../Imagenes/GalaxiaStarburst2.jpg);
+    }
+}
 
 
 

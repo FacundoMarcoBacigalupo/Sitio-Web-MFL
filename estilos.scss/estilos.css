@@ -1094,7 +1094,6 @@ article {
   background-image: url(../Imagenes/GalaxiaStarburst2.jpg);
   background-size: cover;
   background-position: center;
-  color: #e9e5e5;
 }
 
 .DW5 {
@@ -1185,6 +1184,11 @@ article {
     grid-template-rows: auto;
     grid-template-columns: auto auto;
     grid-template-areas: "tituloDW2" "DW11" "DW12" "DW13" "DW14";
+  }
+}
+@media (max-width: 800px) {
+  .galaxiaStarburstInfo2 {
+    background-image: url(../Imagenes/GalaxiaStarburst2.jpg);
   }
 }
 @media (min-width: 450px) and (max-width: 750px) {
