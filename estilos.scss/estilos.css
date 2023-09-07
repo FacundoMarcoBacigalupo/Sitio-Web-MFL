@@ -1648,4 +1648,86 @@ button[type=submit]:active {
 }
 .frasesMotivacionales::first-letter {
   font-size: 20px;
+}
+
+#titleQuestions {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#titleQuestions::first-letter {
+  font-size: 35px;
+}
+
+details {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  width: 35em;
+  max-width: calc(100% - 2rem);
+  position: relative;
+  border-radius: 6px;
+  background-color: #202020;
+  color: #e9e5e5;
+  transition: background-color 0.15s;
+}
+details::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.15;
+  box-shadow: 0 0.25em 0.5em #1a1a1a;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: -1;
+}
+details[open] {
+  background-color: #202020;
+}
+details[open]::before {
+  opacity: 0.6;
+}
+
+summary {
+  padding: 10px 0px 10px 0px;
+  display: block;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+summary::before, summary::after {
+  width: 0.75em;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  background-color: currentColor;
+  text-align: right;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+[open] summary::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+p {
+  margin: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+hr {
+  background-color: #e9e5e5;
 }/*# sourceMappingURL=estilos.css.map */
