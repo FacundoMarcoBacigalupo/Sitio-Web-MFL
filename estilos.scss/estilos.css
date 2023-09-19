@@ -613,8 +613,7 @@ strong {
   left: 10px;
   width: -moz-max-content;
   width: max-content;
-  padding: 10px;
-  padding-bottom: 0px;
+  padding: 0px;
   border-radius: 10px;
   background-color: #1a1a1a;
   color: #e9e5e5;
