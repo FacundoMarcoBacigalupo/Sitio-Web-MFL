@@ -6,6 +6,8 @@
   list-style: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  scrollbar-color: #444444 #1a1a1a;
 }
 
 body {

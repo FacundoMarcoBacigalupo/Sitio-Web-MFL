@@ -28,6 +28,8 @@ $borde: 10px solid;
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scrollbar-width: none;
+    scrollbar-color: $color1 $color4;
 } 
 
 body{
