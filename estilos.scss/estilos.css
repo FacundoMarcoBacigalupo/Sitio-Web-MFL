@@ -1519,7 +1519,7 @@ nav {
   font-size: 40px;
 }
 .serviciosFooter h2:hover {
-  scale: 0.8;
+  scale: 1.1;
   transition: all 0.8s;
 }
 .serviciosFooter h2:active {
