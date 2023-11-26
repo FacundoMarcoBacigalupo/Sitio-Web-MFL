@@ -186,8 +186,12 @@ strong {
 .formContac {
   grid-area: formContac;
   grid-column: 1/4;
-  width: 98%;
-  margin: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#center {
+  text-align: center;
 }
 
 .coe1 {
@@ -1349,6 +1353,20 @@ article {
     grid-template-columns: 1fr;
     grid-template-areas: "subidas" "podcast" "articulo1" "articulo2" "articulo3";
     grid-gap: 20px;
+  }
+  .containerBlog #grillacontac {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "formContac formContac  formContac" "coe1   coe2    coe3";
+    grid-gap: 0px;
+    padding: 0px;
+  }
+  .containerBlog .formContac {
+    grid-area: formContac;
+    grid-column: 1/4;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   #estas {
     height: 400px;
